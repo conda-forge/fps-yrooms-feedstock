@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.1.2"
+  version: "0.2.0"
 
 package:
   name: fps-yrooms
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/f/fps-yrooms/fps_yrooms-${{ version }}.tar.gz
-    sha256: 2143166e1e1c1cfd07472ce0292e1407e2b43de1da171aa826bbf1f2ea922379
+    sha256: 58627fd94630f1fcc185bb27ae4ffcec0a12bc75c040fc69590b00717b9d39f7
 
 build:
   noarch: python
