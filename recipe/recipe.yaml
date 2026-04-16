@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.1.2"
+  version: "0.2.2"
 
 package:
   name: fps-yrooms
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/f/fps-yrooms/fps_yrooms-${{ version }}.tar.gz
-    sha256: 2143166e1e1c1cfd07472ce0292e1407e2b43de1da171aa826bbf1f2ea922379
+    sha256: 68779ff8c2ee2c34343ed36d906a7ff0d75a4af1f4b549a52f9ea8b759266944
 
 build:
   noarch: python
@@ -24,8 +24,17 @@ requirements:
     - uv-build
   run:
     - python >=${{ python_min }}
-    - jupyverse-api >=0.14.0,<0.15.0
+    - anyio
+    - fps
     - jupyter_ydoc >=3.4.0,<4.0.0
+    - jupyverse-api >=0.15.0,<0.16.0
+    - jupyverse-contents >=0.1.0,<0.2.0
+    - jupyverse-file-id >=0.1.0,<0.2.0
+    - jupyverse-yrooms >=0.1.1,<0.2.0
+    - jupyverse-ystore >=0.1.0,<0.2.0
+    - pycrdt
+    - pydantic
+    - structlog
 
 tests:
   - python:
